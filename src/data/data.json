@@ -1,0 +1,138 @@
+{
+  "home" : {
+    "slug" : "home",
+    "title" : "Home"
+  },
+
+  "about" : {
+    "slug" : "about",
+    "title" : "About"
+  },
+
+  "join" : {
+    "slug" : "join",
+    "title" : "Join"
+  },
+
+  "persona" : {
+
+    "paul" : {
+      "slug" : "paul",
+      "name" : "Paul",
+      "map" : {
+        "parent" : "paul",
+        "title" : "Paul's Map",
+        "image" : "/assets/images/backmap.jpg",
+        "buildings" : [
+          {
+            "parent" : "paul",
+            "name" : "Mass General Hospital",
+            "slug" : "mass-general",
+            "x": 1050,
+            "y": 343 ,
+            "image": "/assets/images/map/massgeneral.png",
+            "size": "310px"
+          },
+          {
+            "parent" : "paul",
+            "name" : "Habit OPCO Methadone Clinic",
+            "slug" : "methadone",
+            "x": 1646,
+            "y": 816,
+            "image": "/assets/images/map/methadone.png",
+            "size": "280px"
+          },
+          {
+            "parent" : "paul",
+            "name" : "Woods Mullen Homeless Shelter",
+            "slug" : "mullen",
+            "x": 1200,
+            "y": 566 ,
+            "image": "/assets/images/map/mullen.png",
+            "size": "320px"
+          },
+          {
+            "parent" : "paul",
+            "name" : "The Universal Church",
+            "slug" : "church",
+            "x": 1450,
+            "y": 760,
+            "image": "/assets/images/map/church.png",
+            "size": "180px"
+        }
+        ],
+        "location" : [
+          {
+            "parent" : "paul",
+            "name" : "Crossroads",
+            "slug" : "crossroads",
+            "x": 1380,
+            "y": 820,
+            "image": "/assets/images/map/360.png",
+            "pano" : "//localhost:3000/assets/video/web.mp4",
+            "hotspot" : [
+              {
+                "grandparent" : "paul",
+                "parent" : "crossroads",
+                "name": "PAATH",
+                "slug": "paath",
+                "featuredimage":"/assets/images/overlay/paath.png",
+                "subtitle": "(Providing Access to Addictions Treatment, Hope and Support)",
+                "content": "example"
+              }, {
+                "grandparent" : "paul",
+                "parent" : "crossroads",
+                "name": "AHOPE",
+                "slug": "ahope",
+                "featuredimage":"/assets/images/overlay/paath.png",
+                "subtitle": "(Providing Access to Addictions Treatment, Hope and Support)",
+                "content": "example"
+              }
+            ]
+          },{
+            "parent" : "paul",
+            "name" : "Albany & Mass Ave",
+            "slug" : "albany",
+            "x": 1188,
+            "y": 683,
+            "image": "/assets/images/map/360.png",
+            "pano" : "//localhost:3000/assets/video/albany.mp4",
+            "hotspot" : [
+              {
+                "grandparent" : "paul",
+                "parent" : "mass-ave",
+                "name": "Clinics",
+                "slug": "clinics",
+                "featuredimage": "/assets/images/overlay/paath.png",
+                "content": [
+                  {
+                    "text": "<h2>AHOPE</h2><p>AHOPE (Access, Harm Reduction, Overdose Prevention and Education) is a walk-in needle exchange program for active injection drug users located on Albany Street, in the same facility that is home to PAATHS.</p><p>The program provides integrated HIV, Hepatitis, and Sexually Transmitted Infection (STI) testing, free, legal, and anonymous needle exchange, referrals to HIV, Hepatitis, and STI treatment, overdose prevention education and training, risk reduction supplies to reduce the spread of infection, and risk reduction counseling.</p><p>Services are available at the walk-in center, Monday through Friday, or via mobile van and outreach sites around Boston.</p>"
+                  }, {
+                    "embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/yr4Ab7GzbFs\" frameborder=\"0\" allowfullscreen></iframe>"
+                  }, {
+                    "text": "<h2>PAATHS</h2><p>PAATHS (Providing Access to Addictions Treatment, Hope and Support) is a resource for individuals, families, community partners, and treatment providers who are directly affected by or work to prevent substance abuse disorders.</p><p>The staff at the Albany Street location assess an individual’s treatment needs, describes the types of treatment available, makes recommendations and referrals, facilitates access to different treatment programs, and connects clients to overdose prevention and risk reduction services -- all in collaboration with primary care providers and behavioral staff from emergency departments and primary care settings.</p><p>Individuals may access PAATHS walk-in services at the Albany Street location, on a first-come, first-served basis, and by hotline Monday through Friday.</p>"
+                  }
+                ]
+              }, {
+                "grandparent" : "paul",
+                "parent" : "albany",
+                "name": "BHCHP",
+                "slug": "bhchp",
+                "featuredimage":"/assets/images/overlay/paath.png",
+                "subtitle": "(Providing Access to Addictions Treatment, Hope and Support)",
+                "content": "example"
+              }
+            ]
+          }, {
+            "parent" : "paul",
+            "name" : "Homeless-Shelter",
+            "slug" : "homeless-shelter",
+            "x": 1454,
+            "y": 450,
+            "image": "/assets/images/map/360.png"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.choose {
+  @include fullscreen;
+  background-image: url('/assets/images/backmap.jpg');
+  z-index: -2;
+  background-size: cover;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1b1b1b;
+    opacity: 0.7;
+    z-index: -1;
+    background-blend-mode: hard-light;
+  }
+
+  &__header {
+    margin: 4rem 0 5rem 0;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    margin: 0;
+    display: inline-block;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $yellow;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 1.2s $ease-out-expo;
+      transition-delay: 1s;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  &__body {
+    margin-top: 30px;
+  }
+}
+
+.person {
+  width: 25%;
+  padding: 18px;
+  display: inline-block;
+  transition: transform 0.6s $ease-out-quint;
+  border: .5px solid $white;
+  margin: 0 16px;
+  background-color: $dark-grey;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__name {
+    position: relative;
+    display: inline-block;
+    @include underline;
+  }
+  &:hover &__name:after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}

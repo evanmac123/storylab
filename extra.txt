@@ -1,0 +1,55 @@
+"name": "PAATH",
+"slug": "paath",
+"subtitle": "(Providing Access to Addictions Treatment, Hope and Support)",
+"content": "<p>
+    PAATHS is a resource for individuals, families, community partners, and treatment providers who are directly affected by or work to prevent substance abuse disorders. The center is located on Albany Street, where staff assess an individual’s treatment needs, describe the types of treatment available, make recommendations and referrals, facilitate access to different treatment programs, and connect clients to overdose prevention and risk reduction services -- all in collaboration with primary care providers and behavioral staff from emergency departments and primary care settings. Individuals may access PAATHS walk-in services at the Albany Street location, on a first-come, first-served basis, and by hotline Monday through Friday.
+  < /p>
+  <video src="/assets/video/web.mp4" controls>
+  < /video>
+  <p>
+    PAATHS is a resource for individuals, families, community partners, and treatment providers who are directly affected by or work to prevent substance abuse disorders. The center is located on Albany Street, where staff assess an individual’s treatment needs, describe the types of treatment available, make recommendations and referrals, facilitate access to different treatment programs, and connect clients to overdose prevention and risk reduction services -- all in collaboration with primary care providers and behavioral staff from emergency departments and primary care settings. Individuals may access PAATHS walk-in services at the Albany Street location, on a first-come, first-served basis, and by hotline Monday through Friday.
+  </p>
+  <img src="/assets/images/street.png">
+  <p>
+    PAATHS is a resource for individuals, families, community partners, and treatment providers who are directly affected by or work to prevent substance abuse disorders. The center is located on Albany Street, where staff assess an individual’s treatment needs, describe the types of treatment available, make recommendations and referrals, facilitate access to different treatment programs, and connect clients to overdose prevention and risk reduction services -- all in collaboration with primary care providers and behavioral staff from emergency departments and primary care settings. Individuals may access PAATHS walk-in services at the Albany Street location, on a first-come, first-served basis, and by hotline Monday through Friday.
+  < /p>"
+
+
+
+              {{#split}}
+                {{> split_block}}
+              {{/split}}
+
+              {{#text}}
+                {{> text_block}}
+              {{/text}}
+
+              {{#video}}
+                {{> video_block}}
+              {{/video}}
+
+
+
+              &__map {
+                img {
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+                  width: 210px;
+                  opacity: 0.7;
+                  transform-origin: 100% 20%;
+                  transition: transform 0.6s $ease-out-expo,
+                              opacity 0.6s $ease-out-expo;
+                  border: .5px solid $yellow;
+
+                  &:hover {
+                    transform: scale(1.1);
+                    opacity: 1;
+                    transition: transform 0.6s $ease-out-expo,
+                             opacity 0.6s $ease-out-expo;
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              <img href="/persona/{{ parent }}/map" src="/assets/images/backmap.jpg">

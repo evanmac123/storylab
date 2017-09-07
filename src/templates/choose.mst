@@ -1,0 +1,27 @@
+<div class="choose">
+
+  <div class="choose__header">
+    <h4 class="js-content">THREE STORIES</h4>
+    <h1 class="choose__title js-content">ONE ROAD</h1>
+  </div>
+  <div class="choose__subtitle js-content">Select a subject to learn more about opioid addiction</div>
+
+
+  <div class="choose__body">
+    <div class="row">
+      <a class="person js-card" href="/persona/paul">
+        <img class="person__image" src="/assets/images/portrait2.png">
+        <div class="person__name">Jeff</div>
+      </a>
+      <a class="person js-card" href="/persona/paul">
+        <img class="person__image" src="/assets/images/portrait1.png">
+        <div class="person__name">Paul</div>
+      </a>
+      <a class="person js-card" href="/persona/paul">
+        <img class="person__image" src="/assets/images/portrait3.png">
+        <div class="person__name">Sue</div>
+      </a>
+    </div>
+      </div>
+
+</div>

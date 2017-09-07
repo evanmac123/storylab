@@ -1,0 +1,33 @@
+<div class="home">
+  <div class="home__background">
+    <video poster="" id="bgvid" class="js-bgvid" playsinline muted loop preload autoplay>
+      <source src="/assets/video/home-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="home__overlay js-overlay"></div>
+  <div class="home__body" id="home__title">
+    <div class="home__sub-title js-animate">WE THE PEOPLE OF</div>
+    <div class="home__main-title js-animate">RECOVERY</div><br>
+    <div class="home__main-title js-animate">ROAD</div>
+    <div class="home__description js-animate">Stories of the Boston Opioid Crisis</div>
+
+      <button class="js-click-intro button button--thick js-animate" data-text="BEGIN"><span>BEGIN</span></button>
+  </div>
+</div>
+<div class="intro fullscreen-video js-intro">
+  <div class="player js-player"></div>
+
+  <!--<video src="/assets/video/sample.mp4" class="intro__video js-video"></video>
+  <div class="intro__controls">
+  <a class="js-toggle-video">
+    <img class="intro__play js-play" src="/assets/icons/play.svg">
+    <img class="intro__pause js-pause" src="/assets/icons/pause.svg">
+  </a>
+  <a  class="js-toggle-audio">
+    <img class="intro__mute js-mute" src="/assets/icons/mute.svg">
+    <img class="intro__sound js-sound" src="/assets/icons/sound.svg">
+  </a>
+-->
+
+  </div>
+</div>

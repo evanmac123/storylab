@@ -1,0 +1,20 @@
+
+<div class="map">
+  <div class="map__bounds js-bounds">
+    <div class="map__inner js-draggable">
+      {{#map.location}}
+        <a class="map__location" href="/persona/{{ parent }}/map/{{ slug }}" style="top: {{ y }}px; left: {{ x }}px;">
+          <span data-name="{{ name }}">{{ name }}</span>
+          <img src="{{image}}">
+        </a>
+      {{/map.location}}
+      {{#map.buildings}}
+        <a class="map__buildings" href="/persona/{{ parent }}/map/{{ slug }}" style="top: {{ y }}px; left: {{ x }}px;">
+          <span  data-name="{{ name }}">{{ name }}</span>
+          <img  style="width:{{size}}" src="{{image}}">
+        </a>
+      {{/map.buildings}}
+      <img class="map__image" src="{{ map.image }}" alt="Map">
+    </div>
+  </div>
+</div>

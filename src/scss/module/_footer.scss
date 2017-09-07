@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  &__link {
+    display: inline-block;
+    padding: 12px 20px;
+    opacity: 0.4;
+    font-size:.8em;
+    transition: opacity 0.8s $ease-out-quint;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

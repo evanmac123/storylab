@@ -1,0 +1,152 @@
+.location {
+  @include fullscreen;
+  background-image: url('/assets/images/360.png');
+
+  &__ui {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+  }
+
+  &__hotspot-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__hotspot-title {
+    margin: 0 0 16px 0;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+
+  &__hotspot-links {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__hotspot-link {
+    padding-right: 20px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    @include underline;
+
+    &:hover:after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+
+  &__map {
+
+    img {
+      width: 110px;
+      opacity: 0.7;
+      box-shadow: 0px 2px 5px rgba(#444343, 0.3);
+      transform-origin: 50% 100%;
+      margin-right: 28px;
+      transition: transform 0.6s $ease-out-expo,
+                  opacity 0.6s $ease-out-expo;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        transition: transform 0.6s $ease-out-expo,
+                    opacity 0.6s $ease-out-expo;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__pano {
+    @include fullscreen;
+  }
+}
+
+  .overlay {
+    @include fullscreen;
+    opacity: 0;
+    z-index: 2;
+    display: none;
+    text-align: left;
+
+  &__close-button {
+    position: fixed;
+    top: 0;
+    left: calc(40%);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+
+    &:hover .icon {
+      transform: rotate(90deg);
+      transition: transform 0.4s $ease-out-quint;
+    }
+  }
+
+  &__container{
+    padding: 43px 95px 43px 73px;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    overflow: scroll;
+    z-index: 1;
+    background-color: rgba($dark-grey, 0.97);
+  }
+
+  &__featured {
+    width: 40%;
+    height: 100%;
+
+    img {
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    }
+  }
+
+  &__header {
+    font-size: 2.5em;
+    color: $white;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-bottom: $yellow solid 2px;
+  }
+
+  &__subheader {
+    font-size: 1.1em;
+    color: $white;
+    opacity: .8;
+    font-style: italic;
+    opacity: 0.3;
+  }
+
+  &__content {
+    font-size: 1em;
+    margin-top: 20px;
+
+    video {
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    img {
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    p{
+      margin-top: 10px 0;
+    }
+  }
+}

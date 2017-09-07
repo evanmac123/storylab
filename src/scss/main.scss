@@ -1,0 +1,153 @@
+@import './base/index';
+@import './layout/index';
+@import './module/index';
+@import './state/index';
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  margin: 20px;
+  line-height: 5px;
+  letter-spacing: 0.5px;
+
+  &__sub-title {
+    font-size: .4em;
+    @include sub-title;
+  }
+
+  &__main-title {
+    font-size: .8em;
+    @include main-title;
+    padding-bottom: 5px;
+    border-bottom: 1px $yellow solid;
+  }
+}
+
+.page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include hidden;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vrview {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &__toggle {
+        position: absolute;
+        bottom: 60px;
+        right: 20px;
+    }
+}
+
+  .hidden{
+    display: none;
+    opacity: 0;
+  }
+
+.fullscreen-video {
+  @include fullscreen;
+  z-index: 5;
+  opacity: 1;
+
+  &__controls {
+    opacity: 0;
+    transition: opacity 0.8s $ease-out-quint;
+  }
+
+  a:hover {
+    opacity: 0.3;
+    transition: opacity 0.8s $ease-out-quint;
+    cursor: pointer;
+  }
+
+  &__play {
+    position: absolute;
+    left: 45%;
+    top: 44%;
+    display: none;
+  }
+
+  &__pause {
+    position: absolute;
+    left: 45%;
+    top: 44%;
+  }
+
+  &__mute {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  &__sound {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: none;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  video {
+    @include fullscreen;
+  }
+}
+
+.intro:hover .intro__controls {
+  opacity: 0.9;
+  transition: opacity 0.8s $ease-out-quint,;
+}
+@media screen and (max-device-width: 800px) {
+  html {
+    background-image: url('polina.jpg');
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  #bgvid {
+    display: none;
+  }
+}

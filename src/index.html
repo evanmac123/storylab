@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimal-ui, shrink-to-fit=no">
+
+		<title>storylab</title>
+		<!-- injecting a comment for testing [DJT] -->
+
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link href="/favicon.ico" rel="shortcut icon">
+		<link href="https://fonts.googleapis.com/css?family=Chivo:300,400,400i,700" rel="stylesheet">
+
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<a class="logo js-link" rel="home" href="/">
+			<div class="logo__sub-title js-animate">WE THE PEOPLE OF</div>
+			<div class="logo__main-title js-animate">RECOVERY</div><br>
+			<div class="logo__main-title js-animate">ROAD</div>
+		</a>
+
+		<!-- menu toggle -->
+		<button class="menu js-menu">
+			<div class="icon icon--burger"><span></span></div>
+		</button>
+
+		<!-- sections inserted in main -->
+		<main></main>
+
+		<!-- menu overlay -->
+		<div class="menu-overlay js-overlay">
+			<div class="menu-overlay__pane js-pane">
+				<div class="menu-overlay__pane--inner js-inner">
+					<header class="menu-overlay__header">
+						<h4 class="js-content">Want to help?</h4>
+						<h2 class="js-content">JOIN THE MOVEMENT</h2>
+					</header>
+				</div>
+				<a class="button js-content js-link" href="/join" data-text="JOIN THE MOVEMENT"><span>JOIN THE MOVEMENT</span></a>
+				<div class="menu-overlay__bg-image js-image"></div>
+			</div>
+			<div class="menu-overlay__pane js-pane">
+				<div class="menu-overlay__pane--inner js-inner">
+					<header class="menu-overlay__header">
+						<h4 class="js-content">Want to learn more?</h4>
+						<h2 class="js-content">FOLLOW A DIFFERENT STORY</h2>
+					</header>
+				</div>
+				<a class="button js-content js-link" href="/choose" data-text="CHOOSE A STORY"><span>CHOOSE A STORY</span></a>
+				<div class="menu-overlay__bg-image js-image"></div>
+			</div>
+			<div class="menu-overlay__pane js-pane">
+				<div class="menu-overlay__pane--inner js-inner">
+					<header class="menu-overlay__header">
+						<h4 class="js-content">Coping with addiction?</h4>
+						<h2 class="js-content">LEARN THROUGH OUR RESOURCES</h2>
+					</header>
+				</div>
+				<a class="button js-content js-link" href="#0" data-text="ACCESS RESOURCES"><span>ACCESS RESOURCES</span></a>
+				<div class="menu-overlay__bg-image js-image"></div>
+			</div>
+		</div>
+
+		<!-- site navigation -->
+		<footer class="footer">
+			<a class="footer__link js-link" href="/about">A Northeastern Storylab Project</a>
+		</footer>
+
+    <!-- build:js -->
+		<script src="/js/bundle.js"></script>
+    <!-- endbuild -->
+	</body>
+</html>

@@ -1,0 +1,61 @@
+.home {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__background {
+    @include fullscreen;
+    background: url('/assets/images/street.png') no-repeat;
+    background-color: #212121;
+  }
+
+  &__overlay {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-color: #000000;
+    opacity: 0.8;
+    mix-blend-mode: hard-light;
+    // mix-blend-mode: multiply;
+  }
+
+  &__body {
+    width: 100%;
+    color: $white;
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+
+  &__sub-title {
+    font-size: 1.1em;
+    @include sub-title;
+    opacity: 0;
+    mix-blend-mode: color-dodge;
+  }
+
+  &__main-title {
+    font-size: 3.5em;
+    @include main-title;
+    opacity: 0;
+    border-bottom: 4px $yellow solid;
+    mix-blend-mode: color-dodge;
+  }
+
+  &__description {
+    margin: 24px 0 72px;
+    font-weight: 300;
+    font-size: 1em;
+    opacity: 0;
+    letter-spacing: 0.5px;
+  }
+}
+
+.intro {
+    @include hidden;
+    pointer-events: none;
+}

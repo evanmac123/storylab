@@ -1,0 +1,11 @@
+@import 'menu-open';
+
+.is-animatable {
+  transition: none
+}
+
+.is-choose {
+  .choose__title:after {
+    transform: scaleX(1);
+  }
+}

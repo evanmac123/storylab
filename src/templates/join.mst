@@ -1,0 +1,58 @@
+<div class="join">
+
+  <div class="join__header">
+  I STAND WITH<br> OPIOID USERS
+  </div>
+
+
+  <div class="join__container js-intro">
+    <div class="join__title-block">
+      <div class="join__title">Join the movement</div>
+      <div class="join__description">
+      Take a photo and share to stand up against stigmatizing opioid abuse as a moral failing
+      </div>
+      <button id="1" class="button js-progress">
+        BEGIN
+      </button>
+    </div>
+    <div class="join__photo-grid">
+      <img src="/assets/images/join.png">
+    </div>
+  </div>
+
+  <div class="join__container js-photo hidden ">
+    <div class="join__description">Use Your Webcam To Take a Photo</div>
+    <div class="video">
+      <video src="/assets/video/webcam.mp4" loop autoplay="true" >
+      </video>
+    </div>
+    <button id="2" class=" button js-progress"> TAKE A PHOTO </button>
+  </div>
+
+  <div class="join__container js-post  hidden">
+    <div class="join__description">Use This Photo?</div>
+    <div class="img">
+      <img class="my-image" src="/assets/images/webcam.png">
+    </div>
+    <button  id="3" class="button js-progress"> POST THE PHOTO </button>
+  </div>
+
+  <div class="join__container js-share  hidden">
+    <div class="join__title-block">
+      <div class="join__title">Share the Movement</div>
+      <div class="join__description">
+        Thank you for destigmatizing opioid addiction. Share your photo on facebook to keep the movement going.
+        </div>
+        <div class="img">
+          <img class="my-image" src="/assets/images/webcam.png">
+        </div>
+      <button id="4" class=" js-progress button js-content js-link">
+        SHARE ON FACEBOOK
+      </button>
+    </div>
+    <div class=" join__photo-grid">
+      <img src="/assets/images/join2.png">
+    </div>
+  </div>
+
+</div>

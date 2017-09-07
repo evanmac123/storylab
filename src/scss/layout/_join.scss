@@ -1,0 +1,79 @@
+
+#page-join {
+  &:after {
+  content: "";
+  background-image: url(/assets/images/backmap.jpg);
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  }
+}
+
+.join {
+  width: 85%;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 43px;
+  overflow: scroll;
+  height: 90%;
+
+  &__header {
+    font-weight: 700;
+    margin: 20px;
+    font-size: 1.2em;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+
+  &__description {
+    margin-top: 10px;
+  }
+
+  &__title-block {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid $yellow;
+    background-color: rgba($dark-grey,.8);
+  }
+
+  button {
+    margin-top: 30px;
+  }
+
+  .video,.img {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  video {
+    margin: auto;
+    clear: both;
+    width: 600px
+  }
+
+  .js-post, .js-share {
+    .my-image {
+      margin: auto;
+      clear: both;
+      width: 600px
+    }
+  }
+
+  &__photo-grid {
+    margin-top: 30px;
+    img {
+    width: 100%;
+    }
+  }
+
+
+}

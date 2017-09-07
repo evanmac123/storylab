@@ -1,0 +1,50 @@
+.menu-open {
+  .menu {
+
+    .icon {
+      transition: none;
+    }
+
+    &:before {
+      opacity: 0;
+      transform: translateX(-40px) translateY(120%);
+    }
+
+    &:after {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+
+    &:hover {
+      .icon {
+        transition: transform 0.6s $ease-out-quint;
+      }
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+        transform: translateX(-40px);
+      }
+    }
+  }
+
+  .icon--burger {
+    span {
+      opacity: 0;
+    }
+
+    &:before {
+      transform: translateY(6px) rotate(-45deg);
+    }
+    &:after {
+      transform: translateY(-6px) rotate(45deg);
+    }
+  }
+
+  .menu-overlay {
+    pointer-events: auto;
+  }
+}

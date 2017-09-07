@@ -1,0 +1,64 @@
+<div class="location">
+
+  <div class="location__pano js-pano"></div>
+  <button class="vrview__toggle js-toggle"></button>
+
+  <h1 class="location__name">{{ name }}</h1>
+
+  <div class="location__ui">
+    <a class="location__map js-el" href="/persona/{{ parent }}/map">
+      <img src="/assets/images/backmap.jpg">
+    </a>
+    <!-- print each hotspot link -->
+    <div class="location__hotspot-container">
+      <h5 class="location__hotspot-title">HOTSPOTS</h5>
+      <div class="location__hotspot-links">
+        {{#hotspot}}
+          <!-- Keep the routing we could use it if we want to do hotspot to hotspot jumping
+          <a href="/persona/{{ grandparent }}/map/{{ parent }}/hotspot/{{ slug }}">{{ name }}</a> -->
+          <div class="js-click-overlay location__hotspot-link js-el" id="{{slug}}">{{name}}</div>
+        {{/hotspot}}
+      </div>
+    </div>
+  </div>
+
+  <!-- print each hotspot overlay data -->
+  {{#hotspot}}
+  <div class="overlay js-overlay js-{{slug}}" >
+      <button class="overlay__close-button js-close">
+        <div class="icon icon--close"></div>
+      </button>
+        <div class="overlay__featured">
+          <img src="{{featuredimage}}">
+        </div>
+        <div class="overlay__container">
+          <div class="overlay__header">
+           {{name}}
+          </div>
+          {{#subtitle}}
+            <div class="overlay__subheader">
+              {{subtitle}}
+            </div>
+          {{/subtitle}}
+          <div class="overlay__content">
+            {{#content}}
+              {{#text}}
+                {{{.}}}
+              {{/text}}
+              {{#img}}
+                <img src="{{.}}">
+              {{/img}}
+              {{#video}}
+                <video src="{{.}}" controls></video>
+              {{/video}}
+              {{#embed}}
+                {{{.}}}
+              {{/embed}}
+            {{/content}}
+          </div>
+        </div>
+      </div>
+  {{/hotspot}}
+
+
+</div>
