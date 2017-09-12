@@ -3,6 +3,7 @@ import utils from 'utils'
 import classes from 'dom-classes'
 import Default from './default'
 import Draggable from '@lib/draggable'
+import { on, off } from 'dom-event'
 import ThrowPropsPlugin from '@lib/throw'
 
 class Map extends Default {
@@ -12,6 +13,7 @@ class Map extends Default {
 		super(opt)
 
 		this.slug = 'map'
+		this.closeOverlay = this.closeOverlay.bind(this)
 	}
 
 	init(req, done) {
@@ -22,7 +24,7 @@ class Map extends Default {
 	ready(done) {
 
 		super.ready()
-
+		this.addEvents()
 		const bounding = this.ui.draggable.getBoundingClientRect()
 		this.bounds = {
 			x: bounding.width - config.width,
@@ -35,6 +37,17 @@ class Map extends Default {
 
 		done()
 	}
+
+		addEvents() {
+			on(this.ui.clickOverlay, 'click', this.closeOverlay)
+		}
+
+		closeOverlay(evt){
+			const tl = new TimelineMax({})
+			tl.to(this.ui.holderOverlay, 1.5, { autoAlpha: 0 })
+			tl.set(this.ui.holderOverlay, { display:none})
+			alert("hello");
+		}
 
 	initMap() {
 		return (

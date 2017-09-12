@@ -1,0 +1,16 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^ezmacdesigns\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ezmacdesigns\.com$
+RewriteRule ^/?$ "http\:\/\/www\.ezmacdesigns\.com\/porfolio\/index\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^/?$ "http\:\/\/ezmacdesignes\.com\/porfolio\/index\.html" [R=301,L]
+
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

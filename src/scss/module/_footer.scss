@@ -1,7 +1,10 @@
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  right: 0;
+  left:50%;
+  text-align: center;
+  z-index:1;
+  transform: translateX(-112px);
 
   &__link {
     display: inline-block;
@@ -14,4 +17,22 @@
       opacity: 1;
     }
   }
+}
+
+.page__skip{
+  position:fixed;
+  right:10px;
+  bottom:0;
+  padding: 12px 20px;
+  z-index:10;
+  opacity:0;
+}
+
+.page__back{
+  position:fixed;
+  left:10px;
+  bottom:0;
+  padding: 12px 20px;
+  z-index:10;
+  opacity:0;
 }

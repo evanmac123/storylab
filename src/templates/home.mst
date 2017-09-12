@@ -28,6 +28,11 @@
     <img class="intro__sound js-sound" src="/assets/icons/sound.svg">
   </a>
 -->
-
   </div>
+<a href="/" class="page__back js-click-back">
+  <button class=" button-subtle" >Previous</button>
+</a>
+<a href="/choose" class="page__skip js-click-skip">
+  <button class=" button-subtle" >Next</button>
+</a>
 </div>

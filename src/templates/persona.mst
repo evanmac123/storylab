@@ -2,3 +2,9 @@
 <div class="fullscreen-video">
 <div class="player js-player"></div>
 </div>
+<a href="/choose" class="js-click-back page__back">
+  <button class="button-subtle" >Previous Section</button>
+</a>
+<a style="opacity:1;" href="/persona/paul/map" class="js-click-skip page__skip">
+  <button class="button-subtle" >Next Section</button>
+</a>

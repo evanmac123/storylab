@@ -63,12 +63,22 @@ class Home extends Default {
 		off(this.ui.clickIntro, 'click', this.openIntro.bind(this))
 	}
 
+
 	nextScreen() {
 		framework.go('/choose')
 	}
 
+	openOverlay(evt) {
+			const tl = new TimelineMax({})
+
+			this.target = this.ui[evt.currentTarget.id]
+
+			tl.set(this.target, {display: 'block'})
+			tl.restart()
+	}
 	openIntro() {
 		const tl = new TimelineMax({
+
 			paused: true,
 			onComplete: () => {
 				this.player.setVolume(1)
@@ -81,6 +91,9 @@ class Home extends Default {
 		tl.staggerFromTo(this.ui.animate, 0.7, { autoAlpha: 1 }, { autoAlpha: 0 }, -0.1)
 		tl.to(this.ui.intro, 1.5, { autoAlpha: 1 })
 		tl.set(this.ui.intro, { pointerEvents: 'auto' })
+		TweenLite.to(this.ui.clickBack, 1.5, { autoAlpha: 1 })
+		TweenLite.to(this.ui.clickSkip, 1.5, { autoAlpha: 1 })
+
 		tl.restart()
 	}
 

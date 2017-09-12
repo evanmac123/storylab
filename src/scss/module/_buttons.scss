@@ -44,6 +44,55 @@
   }
 }
 
+.button-subtle {
+  border: 1px solid $white;
+  opacity:.5;
+  padding: 7px 12px;
+  color: $white;
+  background-color: transparent;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 0.75;
+  width:100px;
+  white-space: nowrap;
+  transition: all 0.8s $ease-in-out-quint;
+
+  span {
+    display: inline-block;
+    transition: opacity 0.4s $ease-in-out-quint, transform 0.8s $ease-in-out-quint;
+  }
+
+  &:before {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s $ease-in-out-quint, transform 0.8s $ease-in-out-quint;
+  }
+
+  &:before {
+    transform: translateY(-6px);
+  }
+
+  &:hover {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $yellow;
+    opacity:1;
+
+    span {
+      transform: translateY(6px);
+      opacity: 0;
+    }
+
+    &:before {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
+
 .menu {
   position: fixed;
   top: 0;

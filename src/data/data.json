@@ -118,12 +118,17 @@
                 "parent" : "albany",
                 "name": "BHCHP",
                 "slug": "bhchp",
-                "featuredimage":"/assets/images/overlay/paath.png",
+                "featuredimage":"/assets/images/overlay/bhchp.jpg",
                 "subtitle": "(Providing Access to Addictions Treatment, Hope and Support)",
-                "content": "example"
+                "content": [
+                  {
+                    "text":"<h2>BHCHP</h2> Boston Heath Care for the Homeless Program treats the thousands of individuals find themselves homeless in greater Boston every year. Among them are chronically ill adults, veterans, families with school-age children, and the elderly. They are the people who stay in emergency shelters or motel rooms, eat in soup kitchens, or visit drop-in centers. They are also the men and women who find themselves on the streets, trying to survive in makeshift shelters under bridges, down alleyways, and behind city buildings. Over 12,000 homeless men, women, and children are cared for by Boston Health Care for the Homeless Program each year. We are committed to ensuring that every one of these individuals has access to comprehensive health care, from preventative dental care to cancer treatment. Our clinicians, case managers, and behavioral health professionals work in more than 60 locations to deliver the highest quality health care to some of our community’s most vulnerable—and most resilient—citizens."
+                  }
+                ]
               }
             ]
-          }, {
+          },
+            {
             "parent" : "paul",
             "name" : "Homeless-Shelter",
             "slug" : "homeless-shelter",

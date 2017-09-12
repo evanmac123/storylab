@@ -33,6 +33,8 @@ class Hotspot extends Default {
 			ease: Expo.easeInOut,
 			onComplete: done
 		})
+		TweenLite.to(this.ui.clickBack,1.5, { autoAlpha: 1 })
+		TweenLite.to(this.ui.clickSkip,1.5, { autoAlpha: 1 })
 	}
 
 	animateOut(req, done) {

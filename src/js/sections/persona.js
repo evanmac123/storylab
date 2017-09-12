@@ -44,7 +44,6 @@ class Persona extends Default {
     }
 
     addEvents() {
-
       this.player.ready().then(() => {
         this.iframe = this.ui.player.querySelector('iframe')
         this.player.setVolume(1)
@@ -54,7 +53,6 @@ class Persona extends Default {
     }
 
     removeEvents() {
-
       this.ui.player.removeChild(this.iframe)
       this.iframe = null
       this.player = null
@@ -67,13 +65,15 @@ class Persona extends Default {
     animateIn(req, done) {
 
       classes.add(config.body, `is-${this.slug}`)
+      TweenLite.to(this.ui.clickBack, 1.5, { autoAlpha: 1 })
+      TweenLite.to(this.ui.clickSkip, 1.5, { autoAlpha: 1 })
 
       TweenLite.to(this.page, 1, {
         autoAlpha: 1,
         ease: Expo.easeInOut,
         onComplete: done
       })
-    }
+      }
 
     animateOut(req, done) {
 
@@ -85,7 +85,7 @@ class Persona extends Default {
         clearProps: 'all',
         onComplete: done
       })
-    }
+      }
 
     resize(width, height) {
       const attrs = { width: width, height: height }

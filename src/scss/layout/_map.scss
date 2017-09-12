@@ -7,6 +7,25 @@
   overflow: hidden;
   // background-color: lighten($dark-grey, 1%);
 
+  &__overlay{
+    position:fixed;
+    @include fullscreen;
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.50);
+    z-index:10;
+  }
+
+  &__start{
+    padding:50px;
+    text-align: center;
+    width:100%;
+    margin-top:200px;
+    h2,p{
+      width:60%;
+      margin-left:20%;
+    }
+  }
+
   &__bounds {
     position: relative;
     width: 2800px;
@@ -21,12 +40,14 @@
 
   &__location, &__buildings {
      position: absolute;
+     opacity:.5;
     transform-origin: 50% 300%;
 
 
     &:hover span:after {
       transform-origin: left;
       transform: scaleX(1);
+      opacity:1;
     }
 
     span {
@@ -89,4 +110,9 @@
   &__image {
     pointer-events: none;
   }
+}
+
+.Albany{
+  opacity:1;
+
 }

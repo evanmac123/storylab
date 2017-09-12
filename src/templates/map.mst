@@ -3,7 +3,7 @@
   <div class="map__bounds js-bounds">
     <div class="map__inner js-draggable">
       {{#map.location}}
-        <a class="map__location" href="/persona/{{ parent }}/map/{{ slug }}" style="top: {{ y }}px; left: {{ x }}px;">
+        <a class="map__location {{ name }}" href="/persona/{{ parent }}/map/{{ slug }}" style="top: {{ y }}px; left: {{ x }}px;">
           <span data-name="{{ name }}">{{ name }}</span>
           <img src="{{image}}">
         </a>
@@ -17,4 +17,17 @@
       <img class="map__image" src="{{ map.image }}" alt="Map">
     </div>
   </div>
+  <div class="js-holder-overlay map__overlay">
+    <div class='map__start'>
+    <h2>Follow Paul's Journey</h2>
+    <p>Select a location to begin Paul's Journey into addiction (currently under development - Please select Albany & and Mass Ave.)</p>
+    <button class="button js-click-overlay">Explore</button>
+    </div>
+  </div>
+  <a href="/persona/paul/" class="js-click-back page__back">
+    <button class="button-subtle" >Previous Section</button>
+  </a>
+  <a style="opacity:1;" href="/persona/paul/map/albany" class="js-click-skip page__skip">
+    <button class="button-subtle" >Next Section</button>
+  </a>
 </div>
